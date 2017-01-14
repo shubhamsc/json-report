@@ -11,10 +11,10 @@
 <body>
     <div id="doc"></div>
     <script charset="utf-8">
-        require.config({
-            baseUrl: ".."
-        });
-        require(["lib/docson", "lib/jquery"], function(docson) {
+        // require.config({
+        //     baseUrl: ".."
+        // });
+        require(["docson", "lib/jquery"], function(docson) {
             $(function() {
                 var schema = {
                     "$schema": "http://json-schema.org/draft-04/schema#",
@@ -401,7 +401,6 @@
                         }
                     }
                 }
-                docson.templateBaseUrl = "../templates";
                 docson.doc("doc", schema);
             });
         });

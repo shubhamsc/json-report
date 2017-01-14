@@ -2,5 +2,6 @@ tmp
 deploy
 .idea
 bin
+_site
 *.iml
 .DS_Store
