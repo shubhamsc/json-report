@@ -11,9 +11,6 @@
 <body>
     <div id="doc"></div>
     <script charset="utf-8">
-        // require.config({
-        //     baseUrl: ".."
-        // });
         require(["docson", "lib/jquery"], function(docson) {
             $(function() {
                 var schema = {
@@ -254,7 +251,7 @@
                             "type": "object",
                             "properties": {
                                 "status": {
-                                    "description": "Execution status, possible values are pass, fail, skip, notExecuted",
+                                    "description": "Execution status, possible values are pass, fail, skip, not executed",
                                     "type": "string"
                                 },
                                 "stacktrace": {
@@ -337,7 +334,7 @@
                                     "type": "string"
                                 },
                                 "table": {
-                                    "description": "Param table",
+                                    "description": "Table parameter",
                                     "$ref": "#/definitions/table"
                                 },
                                 "beforeStepHookFailure": {
